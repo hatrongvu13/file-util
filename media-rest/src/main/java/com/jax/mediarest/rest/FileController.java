@@ -3,7 +3,6 @@ package com.jax.mediarest.rest;
 import com.jax.mediarest.dvo.FileDVO;
 import com.jax.mediarest.dvo.ResponseMessage;
 import com.jax.mediarest.service.IFileService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -23,7 +22,6 @@ public class FileController {
 
     private final IFileService service;
 
-    @Autowired
     public FileController(IFileService service) {
         this.service = service;
     }
